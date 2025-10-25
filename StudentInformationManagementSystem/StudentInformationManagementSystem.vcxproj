@@ -123,9 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Headers\file.h" />
+    <ClCompile Include="src\file.c">
+      <FileType>CppHeader</FileType>
+    </ClCompile>
+    <ClInclude Include="src\Headers\common.h" />
     <ClInclude Include="src\Headers\stringTool.h" />
-    <ClInclude Include="src\Headers\Student.h" />
+    <ClCompile Include="src\Student.c">
+      <FileType>CppHeader</FileType>
+    </ClCompile>
     <ClInclude Include="src\Headers\time.h" />
   </ItemGroup>
   <ItemGroup>

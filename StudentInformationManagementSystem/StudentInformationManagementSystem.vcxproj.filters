@@ -15,22 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Headers\Student.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Headers\file.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\Headers\stringTool.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\Headers\time.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\Headers\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Student.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file.c">
+      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

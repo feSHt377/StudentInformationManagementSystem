@@ -1,14 +1,15 @@
 #pragma once
 
-#include "Student.h"
+
 
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
 #include <io.h>
 
+#include "Headers/common.h"
 
-
+//const char* defaultPath = "students.b";
 
 
 int isExist(const char* filename) {//检测文件是否存在
