@@ -126,6 +126,7 @@
     <ClInclude Include="src\Headers\file.h" />
     <ClInclude Include="src\Headers\stringTool.h" />
     <ClInclude Include="src\Headers\Student.h" />
+    <ClInclude Include="src\Headers\time.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c" />
