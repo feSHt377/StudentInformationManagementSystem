@@ -4,7 +4,7 @@
 
 typedef struct
 {
-	short id;//学号
+	int id;//学号
 	char name[35];//姓名
 	int age;//年龄
 	char sex;
@@ -27,7 +27,7 @@ typedef struct node {  // 结构体标签为Node
 
 
 void SelectedSort(Node* head);//此函数对链表进行选择排序，按C语言成绩从小到大排序
-void ShowList();
+void ShowList(Node* head);//显示学生列表
 int addStudent(Node* head, Student student);// Add student to the end of the list
 int removeStudent(Node* head, int id);// Remove student by ID
 int addStudentByCmd(Node* head, char* cmd);// Add student by command string
@@ -35,6 +35,8 @@ int removeStudentByCmd(Node* head, char* cmd);// Remove student by command strin
 Student* findStudentByCmd(Node* head, char* cmd);// Find student by ID
 Student* findStudent(Node* head, int id);// Find student by ID
 void show(Student* student);// Show student information
+void updateHead(Node** head);//update the head pointer from file
+int modifyStudentByCmd(Node* head, char* cmd);// Modify student by command string
 //Student.c
 
 

@@ -61,12 +61,14 @@ int main() {
 	
 	while (running)
 	{
+		updateHead(&head);//update head ptr from file
 		printf("User Input: ");
 		scanf_s("%s", cmd, (int)sizeof(cmd));//获取用户输入的命令
 
 		switch (parseCommand(cmd)) {
 		case CMD_LIST:
-			ShowList(&head);//read and update head ptr
+			SelectedSort(head);//sort before show
+			ShowList(head);
 			break;
 
 		case CMD_ADD:
@@ -76,7 +78,7 @@ int main() {
 			removeStudentByCmd(head, cmd);
 			break;
 		case CMD_MODIFY:
-
+			modifyStudentByCmd(head, cmd);
 			break;
 
 		case CMD_FIND:
